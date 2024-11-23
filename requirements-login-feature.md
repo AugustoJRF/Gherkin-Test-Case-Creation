@@ -1,5 +1,7 @@
 # Requirements for the Login Feature
 
+These requirements were created to serve as examples. Each requirement specifies functionalities and behaviors that a login feature must fulfill. Based on these requirements, the test cases can be developed to validate the UI layout, input field behavior, error handling, and authentication processes, ensuring the system functions as intended.
+
 ### UI Requirements:
 
 **Page Layout**
