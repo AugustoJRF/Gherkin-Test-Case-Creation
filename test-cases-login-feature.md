@@ -1,8 +1,27 @@
 # Test Cases for the Login Feature
 
+(fazer um texto explicando a linguagem gherkin, e dizendo q tbm pode adicionar o actual result... falar dos status tbm apos executar: passed, blocked etc...)
+
 ### Login - Test Cases
 
 ### TC001: Validate UI elements on login page
+
+**Objective:** Verify that all UI elements of the login page are displayed correctly, including the logo, form placement, and labels.
+
+**Preconditions:** The user should be redirected to the Login/Register page.
+
+**Expected Results:** 
+
+  - The logo is displayed on the left side of the page.
+  - The login form is centered on the page.
+  - The form contains the following elements:
+    - Title: "Login on your account"
+    - Subtitle: "Don’t you have an account? Create an account"
+    - Username input field.
+    - Password input field.
+    - Login button.
+
+**Steps:**
 
 **Given** the user was redirected to the Login/Register page
 
@@ -22,7 +41,18 @@
 
 **And** the form contains a Login button
 
-### TC002: Validate input field restrictions on login form 
+### TC002: Validate input field restrictions on login form
+
+**Objective:** Ensure that the username and password fields enforce their respective input restrictions.
+
+**Preconditions:** The user should be on the Login/Register page.
+
+**Expected Results:**
+
+  - The username field allows only alphabetical characters.
+  - The password field allows letters, numbers, and special characters.
+
+**Steps:**
 
 **Given** the user is on the Login/Register page
 
@@ -33,6 +63,17 @@
 **And** the Password field should allow numbers, letters and special characters 
 
 ### TC003: Error message for invalid login attempts
+
+**Objective:** Verify that appropriate error messages are displayed when login attempts are made with invalid credentials.
+
+**Preconditions:** The user should be on the Login/Register page.
+
+**Expected Results:** 
+
+  - For each invalid credentials scenario (wrong username/password combinations), a red error message appears below the password field.
+  - The error message: "Sorry, your username or password are not correct. Please, try again."
+
+**Steps:**
 
 **Given** the user is on the Login/Register page
 
@@ -51,6 +92,17 @@
 |  Correct Username  and  Wrong password |
 
 ### TC004: Verify successful login and redirection
+
+**Objective:** Validate that logging in with correct credentials redirects the user to the correct page and displays a success message.
+
+**Preconditions:** The user should be on the Login/Register page with valid credentials.
+
+**Expected Results:**
+
+  - Upon clicking the login button with valid credentials, the user is redirected to the My Expenses Table page.
+  - A success message appears, stating: "You are logged in."
+
+**Steps:**
 
 **Given** the user is on the Login/Register page
 
