@@ -1,6 +1,16 @@
 # Test Cases for the Login Feature
 
-(fazer um texto explicando a linguagem gherkin, e dizendo q tbm pode adicionar o actual result... falar dos status tbm apos executar: passed, blocked etc...)
+Gherkin language has been chosen to create these test cases It is a domain-specific language designed to write test cases in a clear and human-readable format. It uses simple keywords such as Given, When, Then, And, and But to define the context, action, and expected outcomes of a test scenario. This structured approach ensures that requirements and test cases are easy to understand for both technical and non-technical stakeholders.
+
+During test execution, a test case can have different statuses based on its outcome:
+
+  - Passed: The test case met all the expected outcomes successfully.
+  - Failed: The test case did not meet the expected outcomes due to a defect or error.
+  - Blocked: The test case could not be executed because of an unresolved dependency or issue.
+  - Skipped: The test case was intentionally not executed, often due to conditions such as unimplemented functionality.
+  - In Progress: The test case is currently being executed.
+
+In addition to assigning a status, the actual result observed during test execution can also be recorded. This helps in documenting whether the system's behavior aligns with the expected results.
 
 ### Login - Test Cases
 
@@ -108,6 +118,6 @@
 
 **When** the user clicks on the Login button with valid credentials
 
-**Then** the user should be redirected to the My expenses table page
+**Then** the user should be redirected to the Home page
 
 **And** a message saying: "You are logged in." should appear
