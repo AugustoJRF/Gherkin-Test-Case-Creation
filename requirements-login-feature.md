@@ -50,5 +50,5 @@ The Login form must include:
 
   - The system must verify user credentials (Username and Password).
   - When the credentials are valid:
-    - The user must be redirected to the My Expenses Table page.
+    - The user must be redirected to the Home page.
     - A confirmation message must appear on the page: "You are logged in."
