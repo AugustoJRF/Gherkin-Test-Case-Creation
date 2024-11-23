@@ -1,6 +1,6 @@
 # Test Cases for the Login Feature
 
-Gherkin language has been chosen to create these test cases It is a domain-specific language designed to write test cases in a clear and human-readable format. It uses simple keywords such as Given, When, Then, And, and But to define the context, action, and expected outcomes of a test scenario. This structured approach ensures that requirements and test cases are easy to understand for both technical and non-technical stakeholders.
+Gherkin language has been chosen to create these test cases. It is a domain-specific language designed to write test cases in a clear and human-readable format. It uses simple keywords such as Given, When, Then, And, and But to define the context, action, and expected outcomes of a test scenario. This structured approach ensures that requirements and test cases are easy to understand for both technical and non-technical stakeholders.
 
 During test execution, a test case can have different statuses based on its outcome:
 
