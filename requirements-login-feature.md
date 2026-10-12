@@ -42,7 +42,7 @@ The Login form must include:
 
   - When an invalid login attempt occurs:
     - A red error message must be displayed below the Password field.
-    - The error message text must be: "Sorry, your username or password are not correct. Please, try again."
+    - The error message text must be: "Invalid username or password. Please try again."
 
 ### Authentication and Navigation Requirements:
 
