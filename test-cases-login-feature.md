@@ -18,7 +18,7 @@ In addition to assigning a status, the actual result observed during test execut
 
 **Objective:** Verify that all UI elements of the login page are displayed correctly, including the logo, form placement, and labels.
 
-**Preconditions:** The user should be redirected to the Login/Register page.
+**Preconditions:** The user should be on the Login/Register page.
 
 **Expected Results:** 
 
@@ -33,9 +33,9 @@ In addition to assigning a status, the actual result observed during test execut
 
 **Steps:**
 
-**Given** the user was redirected to the Login/Register page
+**Given** the user is on the Login/Register page
 
-**When** the user is on the Login page
+**When** the user views the login form
 
 **Then** the Logo will be available on the left side
 
@@ -83,23 +83,23 @@ In addition to assigning a status, the actual result observed during test execut
   - For each invalid credentials scenario (wrong username/password combinations), a red error message appears below the password field.
   - The error message: "Sorry, your username or password are not correct. Please, try again."
 
-**Steps:**
+**Scenario Outline:** Error message for invalid login attempts
 
 **Given** the user is on the Login/Register page
 
-**When** the user tries to log in with < Invalid Credentials >
+**When** the user enters username "<username>" and password "<password>"
 
-**And** the user clicks on the Login button
+**And** the user clicks the Login button
 
 **Then** a red error message should appear below the Password field
 
-**And** the message should say: "Sorry, your username or password are not correct. Please, try again."
+**And** the message should say: "Invalid username or password. Please try again."
 
-|          Invalid Credentials           |
-|----------------------------------------|
-|  Wrong Username  and  Wrong password   |
-|  Wrong Username  and  Correct password |
-|  Correct Username  and  Wrong password |
+| username      | password              |
+|---------------|-----------------------|
+| UnknownUser   | IncorrectPassword123! |
+| UnknownUser   | ValidTestPassword123! |
+| ValidTestUser | IncorrectPassword123! |
 
 ### TC004: Verify successful login and redirection
 
